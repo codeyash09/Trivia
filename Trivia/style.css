@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+body{
+  text-align: center;
+  color: white;
+  background-color: #292929;
+  
+}
+
+.selector{
+  display: flex;flex-direction: row;height: 25vh;justify-content: space-around;align-items: center;
+}
+
+.selector input, .selector input, .selector select,.selector button{
+  width: 15vw;
+  height: 60px;
+  border-radius: 25px 0;
+  color: white;
+  background-color: #292929;
+  padding: 15px;
+  border: 5px solid white;
+  transition: all .4s linear;
+}
+
+.selector input:hover, .selector input:hover, .selector select:hover,.selector button:hover{
+  background-color: white;
+  color: #292929;
+  border: #292929;
+  border-radius: 0 25px;
+}
+
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.answers{
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: auto;
+  background-color: #5c5c5c;
+}
+
+.qcontainer{
+  margin-top: 100px;
+  background-color: #5c5c5c;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.down{
+  position: absolute;
+  bottom: 50px;
+  padding: 25px;
+  border-radius: 50px;
+  background-color: white;
+  color: #292929;
+  opacity: 0.5;
+  border: 5px solid white;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  border-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  width: 90px;
+  margin-top: -75vh;
+  transition: background-color .4s linear, border-color .4s linear, color .4s linear, opacity .4s linear;
+}
+
+.up{
+ 
+  margin-bottom: 70vh;
+  padding: 25px;
+  border-radius: 50px;
+  background-color: white;
+  color: #292929;
+  opacity: 0.5;
+  border: 5px solid white;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  border-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  width: 90px;
+  margin-top: -75vh;
+  transition: background-color .4s linear, border-color .4s linear, color .4s linear, opacity .4s linear;
+}
+
+.up:hover{
+  background-color: #292929;
+  border-color: #292929;
+  color: white;
+  opacity: 1;
+}
+
+.down:hover{
+  background-color: #292929;
+  border-color: #292929;
+  color: white;
+  opacity: 1;
+}
+
+.answer{
+  width: 50%;
+  padding: 40px 60px;
+  border: 2px solid #c0c0c0;
+  background-color: #313131;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  transition: all .4s linear;
+}
+
+.answer:hover{
+  background-color: #c1c1c1;
+}
+
+#correctAnswers{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  padding: 50px;
+  width: 50%;
+  border-radius: 25px 0;
+  z-index: 5;
+  top: 25vh;
+  left: 25vw;
+  background-color: #292929;
+  height: 50%;
+  visibility: hidden;
+  transition: all .4s linear;
+}
+
+#myCode{
+  transition: all .4s linear;
+}
+
+.goUp{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 25px;
+  border-radius: 50px;
+  background-color: white;
+  color: #292929;
+  opacity: 0.5;
+  border: 5px solid white;
+    border-top-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    border-left-color: white;
+  border-color: white;
+  font-weight: bold;
+  font-size: 25px;
+  width: 90px;
+  margin-top: -75vh;
+  transition: background-color .4s linear, border-color .4s linear, color .4s linear, opacity .4s linear;
+}
+
+.goUp:hover{
+  background-color: #292929;
+  border-color: #292929;
+  color: white;
+  opacity: 1;
+}
